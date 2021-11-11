@@ -26,16 +26,13 @@ function shuffle(array) {
   while (counter > 0) {
     // Pick a random index
     let index = Math.floor(Math.random() * counter);
-
     // Decrease counter by 1
     counter--;
-
     // And swap the last element with it
     let temp = array[counter];
     array[counter] = array[index];
     array[index] = temp;
   }
-
   return array;
 }
 
@@ -49,8 +46,7 @@ function createDivsForImages(imagesArray) {
     // create a new div
     const newDiv = document.createElement("div");
 
-    // give it a class attribute for the value we are looping over
-    //newDiv.classList.add(image);
+    // give it a source attribute for the image we are looping over
     newDiv.setAttribute('src', image);
 
     // call a function handleCardClick when a div is clicked on
@@ -61,7 +57,7 @@ function createDivsForImages(imagesArray) {
   }
 }
 
-// TODO: Implement this function!
+// this function will be called when a card is clicked on
 function handleCardClick(event) {
   if (noClicking) return;
   if (event.target.classList.contains('selected')) return;
