@@ -1,0 +1,24 @@
+body {
+  background-color: peachpuff;
+  text-align: center;
+}
+
+#game div {
+  border: 2px solid #c42424;
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+  background-image: url('https://images.unsplash.com/photo-1604149312346-aca6a2a742c5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3BpZGVyJTIwd2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #c42424;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
