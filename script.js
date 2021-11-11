@@ -18,7 +18,7 @@ const imagesArray = [
 
 // here is a helper function to shuffle an array
 // it returns the same array with values shuffled
-// it is based on an algorithm called Fisher Yates if you want ot research more
+// it is based on an algorithm called Fisher Yates 
 function shuffle(array) {
   let counter = array.length;
 
@@ -41,8 +41,8 @@ function shuffle(array) {
 
 let shuffledImages = shuffle(imagesArray);
 
-// this function loops over the array of colors
-// it creates a new div and gives it a class with the value of the color
+// this function loops over the array of images
+// it creates a new div and sets the image for each card
 // it also adds an event listener for a click for each card
 function createDivsForImages(imagesArray) {
   for (let image of imagesArray) {
@@ -67,10 +67,9 @@ function handleCardClick(event) {
   if (event.target.classList.contains('selected')) return;
   
   //Select which card was clicked on
-  
   let clickedCard = event.target;
 
-  //Get and set color of card
+  //Get and set image of card
   let imgSrc = clickedCard.getAttribute('src');
 
   clickedCard.style.backgroundImage = imgSrc;
@@ -105,7 +104,7 @@ function handleCardClick(event) {
         card2 = null;
         noClicking = false;
     } else {
-      // Flip the cards back to no color and unselect them after 1 second
+      // Flip the cards back to no image and unselect them after 1 second
         setTimeout(function() {
         card1.style.backgroundImage = '';
         card2.style.backgroundImage = '';
